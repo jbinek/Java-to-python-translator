@@ -7,6 +7,6 @@ gradle fatJar
 ## Run
 
 ```
-java -cp build/libs/antlr-java-ast-all.jar AntlrJavaAstExample
+java -cp build/libs/antlr-java-ast-all-example.jar AstTreeGenerator
 ```
 

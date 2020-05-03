@@ -15,7 +15,7 @@ import java.util.Objects;
 public class AstTreeGenerator {
 
     public static void main(String[] args) throws IOException {
-        print(parseJava(readFile(new File("examples/java/Demo.java"))), false);
+        print(parseJava(readFile(new File("examples/java/Sample.java"))), true);
     }
 
     private static String readFile(File file) throws IOException {

@@ -1,4 +1,4 @@
-public class Demo {
+public class Sample {
 
     void test() {
         int first = 8;
@@ -14,6 +14,6 @@ public class Demo {
     }
 
     public static void main(String[] args) {
-        new Demo().test();
+        new Sample().test();
     }
 }

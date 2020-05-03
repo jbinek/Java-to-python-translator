@@ -36,3 +36,27 @@ Następnie printowane są odpowiednie rule z Parsera z wcięciami (ogólnie drze
 4. *print()*
 
 Po prostu printuje drzewo.
+
+
+## Wnioski z "eksperymentów" z gramatyką
+
+1. Próba zepsucia symbolu ":"
+
+```
+syntax error: '::' came as a complete surprise to me while matching rule preamble
+```
+
+2. Napisanie *forr* zamiast *for* przy basicForStatement nie spowodowało żadnego błędu
+
+3. Wpisanie dwukrotnie 'char' w integralTypes również nie spowodowało błędu:
+
+```
+integralType
+	:	'byte'
+	|	'short'
+	|	'int'
+	|	'long'
+	|	'char'
+	|       'char'
+	;
+```
